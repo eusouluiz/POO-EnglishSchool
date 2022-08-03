@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>473</width>
+    <height>521</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>EnglishSchoolManager</string>
+  </property>
+  <property name="locale">
+   <locale language="English" country="UnitedStates"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableWidget" name="twStudents">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>90</y>
+      <width>411</width>
+      <height>361</height>
+     </rect>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="sizeAdjustPolicy">
+     <enum>QAbstractScrollArea::AdjustIgnored</enum>
+    </property>
+    <property name="alternatingRowColors">
+     <bool>true</bool>
+    </property>
+    <property name="showGrid">
+     <bool>true</bool>
+    </property>
+    <property name="sortingEnabled">
+     <bool>false</bool>
+    </property>
+    <property name="columnCount">
+     <number>4</number>
+    </property>
+    <column>
+     <property name="text">
+      <string>ID</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Student name</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Level</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Grade</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>20</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Welcome, Teacher.</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>60</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Students:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>60</y>
+      <width>80</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Refresh</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>473</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuProfessor">
+    <property name="title">
+     <string>Teacher</string>
+    </property>
+    <addaction name="actionNovo_cadastro"/>
+    <addaction name="actionAtualizar_cadastro"/>
+    <addaction name="actionExcluir_cadastro"/>
+   </widget>
+   <widget class="QMenu" name="menuAluno">
+    <property name="title">
+     <string>Student</string>
+    </property>
+    <addaction name="actionNovo_aluno"/>
+    <addaction name="actionAtualizar_aluno"/>
+    <addaction name="actionExcluir_aluno"/>
+   </widget>
+   <widget class="QMenu" name="menuSair">
+    <property name="title">
+     <string>Program</string>
+    </property>
+    <addaction name="actiona"/>
+   </widget>
+   <addaction name="menuProfessor"/>
+   <addaction name="menuAluno"/>
+   <addaction name="menuSair"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionNovo_cadastro">
+   <property name="text">
+    <string>New</string>
+   </property>
+  </action>
+  <action name="actionAtualizar_cadastro">
+   <property name="text">
+    <string>Update</string>
+   </property>
+  </action>
+  <action name="actionExcluir_cadastro">
+   <property name="text">
+    <string>Delete</string>
+   </property>
+  </action>
+  <action name="actionNovo_aluno">
+   <property name="text">
+    <string>New</string>
+   </property>
+  </action>
+  <action name="actionAtualizar_aluno">
+   <property name="text">
+    <string>Update</string>
+   </property>
+  </action>
+  <action name="actionExcluir_aluno">
+   <property name="text">
+    <string>Delete</string>
+   </property>
+  </action>
+  <action name="actiona">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
